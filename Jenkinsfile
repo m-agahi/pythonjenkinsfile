@@ -1,5 +1,7 @@
 pipeline{
-  agent any
+  agent {
+        docker { image 'python:fattah' }
+    }
   stages {
     stage ("echo") {
       steps {
