@@ -2,7 +2,7 @@ pipeline{
   agent {
         docker { 
             image 'python:fattah'
-            args '--volume pythonfattah'         
+            args '--volume pythonfattah:/python/results'         
         }
     }
   stages {
