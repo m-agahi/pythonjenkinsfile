@@ -4,7 +4,7 @@ pipeline{
             image 'python:fattah'
             //-v /docker/volumes/pythonfattah:/srv
             //--mount source=/docker/volumes/pythonfattah,target=/python/results
-            //args '--rm --name jenkinsbuildenv --mount source=pythonfatah,target=/srv'
+            args '--rm --name jenkinsbuildenv --mount source=pythonfattah,target=/python/results'
             
         }
     }
