@@ -1,3 +1,9 @@
 pipeline{
-
+  stages {
+    stage ("echo") {
+      sh 'echo salam'
+      
+    }
+  
+  }
 }
