@@ -2,7 +2,7 @@ pipeline{
   agent {
         docker { 
             image 'python:fattah'
-            args '--name jenkinsbuildenv --mount source=pythonfattah,target=/python/results'         
+            args '--name jenkinsbuildenv --mount source=/docker/volumes/pythonfattah,target=/python/results'         
         }
     }
   stages {
