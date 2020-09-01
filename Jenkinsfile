@@ -2,7 +2,9 @@ pipeline{
   agent any
   stages {
     stage ("echo") {
-      sh 'echo salam'
+      steps {
+        sh 'echo salam'
+      }
     }
   }
 }
