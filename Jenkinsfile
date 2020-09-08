@@ -12,6 +12,7 @@ pipeline{
     stage ("echo") {
       steps {
         sh 'echo "salam - $(date)" >> /python/results/firstpipeline.txt '
+        sh 'sleep 200'
       }
     }
   }
