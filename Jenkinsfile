@@ -1,6 +1,7 @@
 pipeline{
   agent {
-        docker-thinkpad { 
+        docker { 
+            label 'docker-thinkpad'
             image 'python:fattah'
             //-v /docker/volumes/pythonfattah:/srv
             //--mount source=/docker/volumes/pythonfattah,target=/python/results
