@@ -13,7 +13,7 @@ pipeline{
     stage ("echo") {
       steps {
         sh 'echo "salam - $(date)"'
-        sh 'sleep 10'
+        sh 'sleep 1000'
       }
     }
   }
