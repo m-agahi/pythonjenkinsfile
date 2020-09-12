@@ -19,6 +19,11 @@ pipeline{
           sleep 120
         '''
       }
+      stage ("tst") {
+        steps {
+          sh 'echo pssst'
+        }
+      }
     }
   }
 }
