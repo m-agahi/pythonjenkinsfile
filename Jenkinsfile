@@ -12,8 +12,10 @@ pipeline{
   stages {
     stage ("echo") {
       steps {
-        sh 'echo "salam - $(date)"'
-        sh 'sleep 1000'
+        sh 'echo "hello - $(date)"'
+        sh 'sleep 10'
+        sh 'echo "bye - $(date)"'
+        sh 'sleep 300'
       }
     }
   }
